@@ -1,1 +1,11 @@
 Hello, this is my new website
+
+<div id="count"></div>
+<button id="increment"/>
+<script>
+  let count = 0;
+  document.getElementById("increment").onClick = () => {
+    count += 1;
+    document.getElementById("count").innerHtml = count;
+  }
+</script>
